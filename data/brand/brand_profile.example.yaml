@@ -1,0 +1,40 @@
+brand:
+  name: "2E.IA"
+  tagline: "Automacao inteligente para crescimento comercial"
+  mission: "Transformar estrategia e execucao em uma operacao previsivel"
+  tone_of_voice:
+    - direto
+    - consultivo
+    - tecnico sem jargao excessivo
+
+business:
+  target_segments:
+    - pequenos e medios negocios locais
+    - servicos profissionais
+  value_proposition:
+    - prospeccao inteligente
+    - automacao de funil
+    - implementacao rapida
+
+design:
+  color_palettes:
+    primary:
+      - "#0B1F3A"
+      - "#0E7490"
+    secondary:
+      - "#F59E0B"
+      - "#F3F4F6"
+  fonts:
+    heading: "Sora"
+    body: "Manrope"
+  logo:
+    primary_logo_url: "https://example.com/logo-2eia.svg"
+    favicon_url: "https://example.com/favicon-2eia.png"
+
+content_rules:
+  do:
+    - mostrar resultado pratico e ROI
+    - usar exemplos de operacao real
+  dont:
+    - linguagem vaga
+    - promessas sem prazo ou metrica

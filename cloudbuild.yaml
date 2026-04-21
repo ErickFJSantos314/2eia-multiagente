@@ -1,0 +1,36 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -t
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/2eia-orchestrator:${SHORT_SHA}
+      - .
+
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/2eia-orchestrator:${SHORT_SHA}
+
+  - name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - 2eia-orchestrator
+      - --image
+      - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/2eia-orchestrator:${SHORT_SHA}
+      - --region
+      - ${_REGION}
+      - --platform
+      - managed
+      - --allow-unauthenticated
+      - --set-env-vars
+      - GCP_PROJECT_ID=$PROJECT_ID,GCP_REGION=${_REGION},VERTEX_MODEL=${_VERTEX_MODEL}
+
+images:
+  - ${_REGION}-docker.pkg.dev/$PROJECT_ID/${_REPO}/2eia-orchestrator:${SHORT_SHA}
+
+substitutions:
+  _REGION: us-central1
+  _REPO: 2eia
+  _VERTEX_MODEL: gemini-1.5-pro
