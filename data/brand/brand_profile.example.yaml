@@ -1,40 +1,49 @@
 brand:
   name: "2E.IA"
-  tagline: "Automacao inteligente para crescimento comercial"
-  mission: "Transformar estrategia e execucao em uma operacao previsivel"
+  tagline: "Inteligência Aplicada"
+  mission: "Transformar operações através de uma arquitetura de dados proprietária, devolvendo tempo ao gestor, eliminando tarefas manuais e travando a lucratividade (CMV)."
   tone_of_voice:
-    - direto
-    - consultivo
-    - tecnico sem jargao excessivo
+    - "Direto e objetivo (Pé no chão, resolve o problema)"
+    - "Consultivo (Postura de Boutique de Engenharia, parceiros de negócio)"
+    - "Técnico orientado a ROI (Foco em números, sem jargões corporativos vazios)"
 
 business:
   target_segments:
-    - pequenos e medios negocios locais
-    - servicos profissionais
+    - "Deliveries e Alimentação (Pizzarias, Cabanas de Praia, Bioorganic)"
+    - "Serviços com Agendamento (Barbearias, Clínicas, Nail Designers)"
+    - "Empresas buscando expansão comercial (Prospecção B2B)"
   value_proposition:
-    - prospeccao inteligente
-    - automacao de funil
-    - implementacao rapida
+    - "Ecossistema Hardcoded em Python (Sem limitações de ferramentas no-code)"
+    - "Travamento de CMV e Fechamento Inteligente de Caixa"
+    - "Máquina Omnichannel (Garçom Digital e Automação de Funil de Vendas)"
 
 design:
   color_palettes:
-    primary:
-      - "#0B1F3A"
-      - "#0E7490"
-    secondary:
-      - "#F59E0B"
-      - "#F3F4F6"
+    primary_dark:
+      - "#1A2B48" # Azul Marinho / Base
+      - "#2C3E50" # Ardósia Escura / Suporte
+    accent:
+      - "#00D2FF" # Ciano Luminoso / Chamadas de Ação (CTA) e Destaques
+    background_light:
+      - "#F4F7F9" # Branco Gelo / Fundos de Landing Pages
   fonts:
-    heading: "Sora"
-    body: "Manrope"
-  logo:
-    primary_logo_url: "https://example.com/logo-2eia.svg"
-    favicon_url: "https://example.com/favicon-2eia.png"
+    heading: "Roboto"
+    body: "Roboto"
+  logos:
+    modo_claro:
+      com_texto: "https://github.com/2eia/images/blob/main/intern/logo%20c%20txt%20fundo%20claro.png?raw=true"
+      sem_texto: "https://github.com/2eia/images/blob/main/intern/Logo%20para%20modo%20escuro%20sem%20texto.png?raw=true"
+    modo_escuro:
+      com_texto: "https://github.com/2eia/images/blob/main/intern/Design%20sem%20nome.png?raw=true"
+      sem_texto: "https://github.com/2eia/images/blob/main/intern/Logo%20para%20modo%20escuro%20sem%20texto.png?raw=true"
+    icone_hexagonal: "https://github.com/2eia/images/blob/main/intern/Logo%20para%20modo%20escuro%20sem%20texto.png?raw=true"
 
 content_rules:
   do:
-    - mostrar resultado pratico e ROI
-    - usar exemplos de operacao real
+    - "Mostrar resultado prático e financeiro (Ex: 'Fim da taxa do iFood', 'Controle real de estoque')."
+    - "Usar exemplos tangíveis da operação real do cliente."
+    - "Posicionar a 2E.IA como engenheiros de software, reforçando a segurança e exclusividade."
   dont:
-    - linguagem vaga
-    - promessas sem prazo ou metrica
+    - "Usar linguagem genérica de agência (Ex: 'soluções inovadoras', 'alavancar suas redes')."
+    - "Fazer promessas sobre prestação de serviços de Tráfego Pago ou Social Media."
+    - "Fazer promessas sem métricas atreladas ou depender de plataformas instáveis."
